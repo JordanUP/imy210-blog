@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: #000000;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #848484;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    color: #00091b;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .card {
+    background-color: #c9c9c9;
+    border: none;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10%;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #000000;
+  }
+
+  .card p {
+    margin: 0.5em 0;
+    color: #000000;
+    font-size: 1em;
+  }
+
+  .card a {
+    display: inline-block;
+    margin-top: 0.5em;
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    background-color: #fff;
+  }
+
+  .card a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+  }
+
+  input {
+    width: 98%;
+    padding: 0.75em;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    display: block;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+  }
+
+   label {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #000000;
+    display: block;
+    text-align: center;
+  }
+
+  select {
+    display: block;
+    margin: 0 auto;
+    padding: 0.75em;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+
+  select:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+  }
+
+  .prose {
+    margin-top: 1.5em;
+    color: #2d3748;
+  }
+
+  .prose p {
+    margin: 1em 0;
+    line-height: 1.8;
+  }
+
+  nav {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  nav a {
+    color: #00307c;
+    text-decoration: underline;
+    margin: 0 1em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+  }
+
+  a {
+    color: #00307c;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-align: center;
+    display: block;
+    margin: 1em 0;
+  }
